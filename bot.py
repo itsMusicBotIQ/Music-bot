@@ -7,7 +7,7 @@ from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, Con
 from telegram.request import HTTPXRequest
 
 
-BOT_TOKEN = "TOKEN"
+BOT_TOKEN = os.getenv("TOKEN")
 
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
